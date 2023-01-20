@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  column-gap: 2.5rem;
+
+  @media (max-width: $mobile) {
+    column-gap: 0.5rem;
+  }
+
+  &-link {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0.1rem solid var(--gray);
+    border-radius: 100%;
+    transition: border-color 0.2s linear;
+
+    &:hover {
+      border-color: var(--gold);
+
+      svg path {
+        fill: var(--gold);
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.student {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  padding-block: 5rem;
+
+  @media (max-width: $tablet) {
+    padding-block: 4rem;
+
+    @media (max-width: $mobile) {
+      &-school {
+        display: none;
+      }
+    }
+  }
+
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}

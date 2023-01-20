@@ -1,0 +1,45 @@
+.logo {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: baseline;
+  column-gap: 2.5rem;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: var(--gold);
+
+    svg path {
+      fill: var(--gold);
+    }
+  }
+
+  &.active {
+    color: var(--gold-active);
+
+    svg path {
+      fill: var(--gold-active);
+    }
+  }
+
+  @media (max-width: $tablet) {
+    line-height: 5rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+
+      svg {
+        width: 2.9rem;
+        height: 1.6rem;
+      }
+    }
+  }
+}
