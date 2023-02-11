@@ -1,0 +1,34 @@
+@import '@styles/variables';
+
+.navbar {
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0 5.5rem;
+
+    @media (max-width: $desktop) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem 0;
+
+      padding-block-start: 1.5rem;
+      padding-block-end: 2.5rem;
+      padding-inline-start: 5.5rem;
+
+      background-color: var(--bg-black);
+      transition: transform 0.2s linear;
+
+      &:has(+ .burger-close) {
+        transform: translateY(100%);
+      }
+    }
+  }
+}

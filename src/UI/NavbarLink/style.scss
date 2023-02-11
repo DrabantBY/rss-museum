@@ -1,0 +1,20 @@
+.menu-link {
+  display: block;
+  padding-block: 1rem;
+
+  font-weight: 300;
+  font-size: var(--header-link-fs);
+  line-height: var(--header-link-lh);
+  letter-spacing: var(--link-ls);
+
+  text-transform: capitalize;
+
+  &.active {
+    color: var(--gold-active);
+  }
+
+  &:hover,
+  &.active:hover {
+    color: var(--gold-hover);
+  }
+}

@@ -1,0 +1,40 @@
+@import '@styles/variables';
+
+.logo {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: baseline;
+  column-gap: 2.5rem;
+
+  font-family: 'Forum';
+  font-size: var(--logo-fs);
+  line-height: var(--logo-lh);
+  letter-spacing: var(--title-ls);
+  text-transform: uppercase;
+
+  &.active {
+    color: var(--gold-active);
+
+    svg path {
+      fill: var(--gold-active);
+    }
+  }
+
+  &:hover,
+  &.active:hover {
+    color: var(--gold-hover);
+
+    svg path {
+      fill: var(--gold-hover);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    svg {
+      width: 2.9rem;
+      height: 1.6rem;
+    }
+  }
+}

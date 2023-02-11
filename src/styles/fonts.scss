@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('./src/assets/fonts/Roboto-Thin.woff2') format('woff2'),
-    url('./src/assets/fonts/Roboto-Thin.woff') format('woff');
+  src: url('@assets/fonts/Roboto-Thin.woff2') format('woff2'),
+    url('@assets/fonts/Roboto-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: block;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./src/assets/fonts/Roboto-Light.woff2') format('woff2'),
-    url('./src/assets/fonts/Roboto-Light.woff') format('woff');
+  src: url('@assets/fonts/Roboto-Light.woff2') format('woff2'),
+    url('@assets/fonts/Roboto-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: block;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./src/assets/fonts/Roboto-Regular.woff2') format('woff2'),
-    url('./src/assets/fonts/Roboto-Regular.woff') format('woff');
+  src: url('@assets/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('@assets/fonts/Roboto-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./src/assets/fonts/Roboto-Medium.woff2') format('woff2'),
-    url('./src/assets/fonts/Roboto-Medium.woff') format('woff');
+  src: url('@assets/fonts/Roboto-Medium.woff2') format('woff2'),
+    url('@assets/fonts/Roboto-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: block;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./src/assets/fonts/Roboto-Bold.woff2') format('woff2'),
-    url('./src/assets/fonts/Roboto-Bold.woff') format('woff');
+  src: url('@assets/fonts/Roboto-Bold.woff2') format('woff2'),
+    url('@assets/fonts/Roboto-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: block;
@@ -45,86 +45,9 @@
 
 @font-face {
   font-family: 'Forum';
-  src: url('./src/assets/fonts/Forum.woff2') format('woff2'),
-    url('./src/assets/fonts/Forum.woff') format('woff');
+  src: url('@assets/fonts/Forum.woff2') format('woff2'),
+    url('@assets/fonts/Forum.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: block;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url('./src/assets/fonts/icomoon.eot?z4mz52');
-  src: url('./src/assets/fonts/icomoon.eot?z4mz52#iefix')
-      format('embedded-opentype'),
-    url('./src/assets/fonts/icomoon.ttf?z4mz52') format('truetype'),
-    url('./src/assets/fonts/icomoon.woff?z4mz52') format('woff'),
-    url('./src/assets/fonts/icomoon.svg?z4mz52#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^='icon-']::before,
-[class^='icon-']::after,
-[class*=' icon-']::after,
-[class*=' icon-']::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-arrow-input:before {
-  content: '\e900';
-}
-.icon-arrow-link:after {
-  content: '\e901';
-}
-.icon-arrow-select:before {
-  content: '\e902';
-}
-.icon-check:before {
-  content: '\e903';
-}
-.icon-date:before {
-  content: '\e904';
-}
-.icon-email:before {
-  content: '\e905';
-}
-.icon-facebook:before {
-  content: '\e906';
-}
-.icon-instagram:before {
-  content: '\e907';
-}
-.icon-name:before {
-  content: '\e908';
-}
-.icon-pinterest:before {
-  content: '\e909';
-}
-.icon-tel:before {
-  content: '\e90a';
-}
-.icon-time:before {
-  content: '\e90b';
-}
-.icon-twitter:before {
-  content: '\e90c';
-}
-.icon-list:before {
-  content: '\e90d';
-}
-.icon-youtube:before {
-  content: '\e90e';
 }

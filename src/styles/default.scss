@@ -1,105 +1,50 @@
-$desktop: 1025px;
-$tablet: 769px;
-$mobile: 421px;
-
 :root {
   font-family: 'Roboto';
   font-size: 0.625em;
   box-sizing: border-box;
   user-select: none;
+  color: #ffffff;
 
-  --header-hight: 15rem;
+  //? header var
+  --header-min-height: 15rem;
 
-  --title-font-size: 8rem;
-  --title-line-height: 9rem;
-
+  //? color var
   --bg-black: #030303;
-  //   $bg-gold: #d2b183;
-  //   $dark-red: #710707;
   --gold: #9d8665;
+  --gold-hover: #9d8665;
   --gold-active: #7e6c51;
-  --gray: #666666;
+
+  //? logo var
+  --logo-fs: 2.8rem;
+  --logo-lh: 3.1rem;
+
+  //? header link var
+  --header-link-fs: 2.2rem;
+  --header-link-lh: 2.6rem;
+  --link-ls: 0.2rem;
+
+  //? title var
+  --title-ls: 0.5rem;
 
   @media (max-width: $desktop) {
-    --header-hight: 13rem;
-    --title-font-size: 5rem;
+    --header-min-height: 13rem;
+    // --title-font-size: 5rem;
+    --header-link-fs: 2rem;
+    --header-link-lh: 2.3rem;
 
     @media (max-width: $tablet) {
-      --header-hight: 11rem;
-      --title-font-size: 4rem;
-      --title-line-height: 6rem;
+      --header-min-height: 11rem;
+      //   --title-font-size: 4rem;
+      //   --title-line-height: 6rem;
+      --logo-lh: 5rem;
 
       @media (max-width: $mobile) {
-        --header-hight: 9rem;
-        --title-font-size: 2.8rem;
-        --title-line-height: 4rem;
+        --header-min-height: 9rem;
+        // --title-font-size: 2.8rem;
+        // --title-line-height: 4rem;
+        --logo-fs: 1.6rem;
+        --logo-lh: 1.8rem;
       }
     }
   }
-}
-
-* {
-  box-sizing: inherit;
-  padding-block: 0;
-  padding-inline: 0;
-  margin-block: 0;
-  margin-inline: 0;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-a {
-  font-family: inherit;
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-h2 {
-  font-family: 'Forum';
-  font-weight: 400;
-  font-size: var(--title-font-size);
-  line-height: var(--title-line-height);
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-}
-
-button {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-main {
-  flex: 1 1 auto;
-}
-
-svg path {
-  transition: fill 0.2s linear;
-}
-
-#root {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  max-width: 1480px;
-  padding-block: 0;
-  padding-inline: 2rem;
-  margin-block: 0;
-  margin-inline: auto;
 }

@@ -1,18 +1,24 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Main } from './components/Main';
-import { Visiting } from './components/Visiting/Visiting';
+import Main from '@Pages/Main';
+// import { Visiting } from './components/Visiting/Visiting';
+// import { Welcome } from './components/Welcome/Welcome';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
-    children: [
-      {
-        path: 'visiting',
-        element: <Visiting />,
-      },
-    ],
+    // children: [
+    //   {
+    //     index: true,
+    //     element: <Welcome />,
+    //   },
+    //   {
+    //     path: 'visiting',
+    //     element: <Visiting />,
+    //   },
+    // ],
   },
 ]);
 
-export const App = () => <RouterProvider router={router} />;
+const App = (): JSX.Element => <RouterProvider router={router} />;
+export default App;
