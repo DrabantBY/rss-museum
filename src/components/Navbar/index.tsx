@@ -21,7 +21,10 @@ const Navbar = (): JSX.Element => {
     <nav className="navbar header__navbar">
       <ul className="menu navbar__menu header__menu">
         {LIST.map((item) => (
-          <NavbarLink key={item} link={item}></NavbarLink>
+          <NavbarLink
+            key={item}
+            link={item}
+            handleState={setIsOpen}></NavbarLink>
         ))}
       </ul>
       {isOpen ? (

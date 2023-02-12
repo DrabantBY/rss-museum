@@ -6,7 +6,7 @@
   color: #ffffff;
 
   //? header var
-  --header-min-height: 11rem;
+  --header-min-height: 12rem;
 
   //? color var
   --bg-black: #030303;
@@ -29,9 +29,6 @@
   --h2-lh: 9rem;
   --title-ls: 0.5rem;
 
-  //? greeting var
-  --greeting-pt: 15rem;
-
   //? slogan var
   --slogan-fs: 2.8rem;
   --slogan-lh: 3.3rem;
@@ -41,8 +38,12 @@
   --discover-link-width: 36rem;
   --discover-link-height: 7.5rem;
 
+  //? slider padding
+  --slider-pb: 6rem;
+  --slider-pl: 44rem;
+
   @media (max-width: $desktop) {
-    --header-min-height: 9rem;
+    --header-min-height: 10rem;
     --header-link-fs: 2rem;
     --header-link-lh: 2.3rem;
     --h2-fs: 5rem;
@@ -52,25 +53,28 @@
     --slogan-mb: 5rem;
     --discover-link-width: 30rem;
     --discover-link-height: 6rem;
-    --greeting-pt: 8rem;
+    --slider-pb: 12rem;
+    --slider-pl: 28.4rem;
 
     @media (max-width: $tablet) {
-      --header-min-height: 7rem;
+      --header-min-height: 8rem;
       --logo-lh: 5rem;
       --h2-fs: 4rem;
       --h2-lh: 6rem;
       --slogan-fs: 2rem;
       --slogan-lh: 2.3rem;
-      --greeting-pt: 0.5rem;
+      --slider-pb: 10rem;
+      --slider-pl: 0;
 
       @media (max-width: $mobile) {
-        --header-min-height: 5rem;
+        --header-min-height: 6rem;
         --h2-fs: 2.8rem;
         --h2-lh: 4rem;
         --logo-fs: 1.6rem;
         --logo-lh: 1.8rem;
         --slogan-fs: 1.6rem;
         --slogan-lh: 1.9rem;
+        --slider-pb: 8rem;
       }
     }
   }

@@ -1,7 +1,27 @@
 @import '@styles/variables';
 
 .greeting {
-  padding-block-start: var(--greeting-pt);
+  position: absolute;
+  z-index: 2;
+  max-width: 44rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $desktop) {
+    display: block;
+    padding-block-start: 5rem;
+
+    @media (max-width: $tablet) {
+      position: static;
+      z-index: 0;
+      height: auto;
+      text-align: center;
+      margin-inline: auto;
+      padding-block-start: 0.5rem;
+    }
+  }
 
   &__title {
     margin-block-end: 2.5rem;

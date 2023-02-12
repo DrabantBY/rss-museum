@@ -16,6 +16,7 @@
       &::after {
         content: '';
         position: absolute;
+        z-index: 4;
         top: 0;
         left: 0;
         width: 100%;
