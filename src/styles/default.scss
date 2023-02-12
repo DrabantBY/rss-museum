@@ -6,10 +6,11 @@
   color: #ffffff;
 
   //? header var
-  --header-min-height: 15rem;
+  --header-min-height: 11rem;
 
   //? color var
   --bg-black: #030303;
+  --bg-red: #710707;
   --gold: #9d8665;
   --gold-hover: #9d8665;
   --gold-active: #7e6c51;
@@ -24,26 +25,52 @@
   --link-ls: 0.2rem;
 
   //? title var
+  --h2-fs: 8rem;
+  --h2-lh: 9rem;
   --title-ls: 0.5rem;
 
+  //? greeting var
+  --greeting-pt: 15rem;
+
+  //? slogan var
+  --slogan-fs: 2.8rem;
+  --slogan-lh: 3.3rem;
+  --slogan-mb: 7.5rem;
+
+  //? discover-link var
+  --discover-link-width: 36rem;
+  --discover-link-height: 7.5rem;
+
   @media (max-width: $desktop) {
-    --header-min-height: 13rem;
-    // --title-font-size: 5rem;
+    --header-min-height: 9rem;
     --header-link-fs: 2rem;
     --header-link-lh: 2.3rem;
+    --h2-fs: 5rem;
+    --h2-lh: 7.5rem;
+    --slogan-fs: 2.4rem;
+    --slogan-lh: 2.8rem;
+    --slogan-mb: 5rem;
+    --discover-link-width: 30rem;
+    --discover-link-height: 6rem;
+    --greeting-pt: 8rem;
 
     @media (max-width: $tablet) {
-      --header-min-height: 11rem;
-      //   --title-font-size: 4rem;
-      //   --title-line-height: 6rem;
+      --header-min-height: 7rem;
       --logo-lh: 5rem;
+      --h2-fs: 4rem;
+      --h2-lh: 6rem;
+      --slogan-fs: 2rem;
+      --slogan-lh: 2.3rem;
+      --greeting-pt: 0.5rem;
 
       @media (max-width: $mobile) {
-        --header-min-height: 9rem;
-        // --title-font-size: 2.8rem;
-        // --title-line-height: 4rem;
+        --header-min-height: 5rem;
+        --h2-fs: 2.8rem;
+        --h2-lh: 4rem;
         --logo-fs: 1.6rem;
         --logo-lh: 1.8rem;
+        --slogan-fs: 1.6rem;
+        --slogan-lh: 1.9rem;
       }
     }
   }

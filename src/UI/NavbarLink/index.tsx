@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as IconArrowLink } from '@assets/svg/arrow-link.svg';
 
 import './style.scss';
 
@@ -9,6 +10,7 @@ const NavbarLink: React.FC<{ link: string }> = ({ link }): JSX.Element => {
         className="menu-link navbar__menu-link header__menu-link"
         to={`/${link}`}>
         {link}
+        <IconArrowLink />
       </NavLink>
     </li>
   );

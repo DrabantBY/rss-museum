@@ -12,10 +12,19 @@ body {
   height: 100%;
 }
 
+h2 {
+  font-family: 'Forum';
+  font-weight: 400;
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+  letter-spacing: var(--title-ls);
+  text-transform: uppercase;
+}
+
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 ul {
@@ -65,5 +74,25 @@ button {
 
   &:hover span {
     background-color: var(--gold-hover);
+  }
+}
+
+.logo,
+.menu-link {
+  &.active {
+    color: var(--gold-active);
+
+    svg path {
+      fill: var(--gold-active);
+    }
+  }
+
+  &:hover,
+  &.active:hover {
+    color: var(--gold-hover);
+
+    svg path {
+      fill: var(--gold-hover);
+    }
   }
 }

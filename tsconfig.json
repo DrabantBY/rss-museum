@@ -41,6 +41,12 @@
             ],
             "@Pages/*": [
                 "src/Pages/*"
+            ],
+            "@Welcome/*": [
+                "src/Pages/Welcome/*"
+            ],
+            "@Greeting/*": [
+                "src/components/Greeting/*"
             ]
         }
     },

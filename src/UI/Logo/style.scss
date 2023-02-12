@@ -14,23 +14,6 @@
   letter-spacing: var(--title-ls);
   text-transform: uppercase;
 
-  &.active {
-    color: var(--gold-active);
-
-    svg path {
-      fill: var(--gold-active);
-    }
-  }
-
-  &:hover,
-  &.active:hover {
-    color: var(--gold-hover);
-
-    svg path {
-      fill: var(--gold-hover);
-    }
-  }
-
   @media (max-width: $mobile) {
     svg {
       width: 2.9rem;

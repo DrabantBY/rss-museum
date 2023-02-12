@@ -1,0 +1,14 @@
+@import '@styles/variables';
+
+.section-welcome {
+  background-color: var(--bg-black);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 44rem 1fr;
+
+    @media (max-width: $desktop) {
+      grid-template-columns: 28.4rem 1fr;
+    }
+  }
+}

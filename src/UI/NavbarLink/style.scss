@@ -1,3 +1,5 @@
+@import '@styles/variables';
+
 .menu-link {
   display: block;
   padding-block: 1rem;
@@ -9,12 +11,18 @@
 
   text-transform: capitalize;
 
-  &.active {
-    color: var(--gold-active);
+  svg {
+    display: none;
   }
 
-  &:hover,
-  &.active:hover {
-    color: var(--gold-hover);
+  @media (max-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12.5rem;
+
+    svg {
+      display: block;
+    }
   }
 }

@@ -1,0 +1,48 @@
+@import '@styles/variables';
+
+.greeting {
+  padding-block-start: var(--greeting-pt);
+
+  &__title {
+    margin-block-end: 2.5rem;
+  }
+
+  &__slogan {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: var(--slogan-fs);
+    line-height: var(--slogan-lh);
+    margin-block-end: var(--slogan-mb);
+    white-space: nowrap;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  &__link-discover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
+    width: var(--discover-link-width);
+    height: var(--discover-link-height);
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: var(--header-link-fs);
+    line-height: var(--header-link-lh);
+    letter-spacing: var(--link-ls);
+
+    border-radius: 1rem;
+    background-color: var(--bg-red);
+
+    &:hover {
+      background-color: var(--gold-hover);
+    }
+  }
+}
