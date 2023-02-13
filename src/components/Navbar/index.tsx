@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import NavbarLink from '@UI/NavbarLink';
-import BtnBurgerOpen from '@UI/BtnBurgerOpen';
-import BtnBurgerClose from '@UI/BtnBurgerClose';
+import BtnBurger from '@UI/BtnBurger';
 
 import './style.scss';
 
@@ -27,11 +26,7 @@ const Navbar = (): JSX.Element => {
             handleState={setIsOpen}></NavbarLink>
         ))}
       </ul>
-      {isOpen ? (
-        <BtnBurgerOpen handleState={setIsOpen} />
-      ) : (
-        <BtnBurgerClose handleState={setIsOpen} />
-      )}
+      <BtnBurger state={isOpen} handleState={setIsOpen} />
     </nav>
   );
 };

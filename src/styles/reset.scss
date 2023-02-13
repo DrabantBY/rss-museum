@@ -56,27 +56,6 @@ button {
   margin-inline: auto;
 }
 
-.burger {
-  position: relative;
-  z-index: 5;
-  display: none;
-  padding-block: 1rem;
-
-  @media (max-width: $desktop) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  span {
-    background-color: #ffffff;
-    transition: background-color 0.2s linear;
-  }
-
-  &:hover span {
-    background-color: var(--gold-hover);
-  }
-}
-
 .logo,
 .menu-link {
   &.active {

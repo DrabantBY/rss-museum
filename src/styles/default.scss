@@ -40,7 +40,7 @@
 
   //? slider padding
   --slider-pb: 6rem;
-  --slider-pl: 44rem;
+  --slider-pl: 31%;
 
   @media (max-width: $desktop) {
     --header-min-height: 10rem;
@@ -54,7 +54,7 @@
     --discover-link-width: 30rem;
     --discover-link-height: 6rem;
     --slider-pb: 12rem;
-    --slider-pl: 28.4rem;
+    --slider-pl: 28%;
 
     @media (max-width: $tablet) {
       --header-min-height: 8rem;

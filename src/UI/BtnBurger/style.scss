@@ -1,0 +1,46 @@
+@import '@styles/variables';
+
+.burger {
+  position: relative;
+  z-index: 5;
+  display: none;
+  padding-block: 1rem;
+
+  @media (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    background-color: #ffffff;
+    transition: background-color 0.2s linear;
+  }
+
+  &:hover span {
+    background-color: var(--gold-hover);
+  }
+
+  &-open {
+    gap: 0.6rem;
+
+    span {
+      width: 3.2rem;
+      height: 0.2rem;
+    }
+  }
+
+  &-close {
+    span {
+      width: 33px;
+      height: 2px;
+
+      &:first-child {
+        transform: translate(4px, 1px) rotate(43deg);
+      }
+
+      &:last-child {
+        transform: translate(4px, -1px) rotate(-43deg);
+      }
+    }
+  }
+}
