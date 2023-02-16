@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import NavbarLink from '@UI/NavbarLink';
-import BtnBurger from '@UI/BtnBurger';
+import NavbarLink from '@components/Header/NavbarLink';
+import BtnBurger from '@components/Header/BtnBurger';
 
 import './style.scss';
 

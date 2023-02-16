@@ -1,0 +1,14 @@
+.slider-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--controls-gap);
+  width: var(--controls-width);
+  height: var(--controls-height);
+  z-index: 40;
+  margin-inline-start: var(--controls-ml);
+  margin-block-start: var(--controls-mt);
+  font-size: 2rem;
+  background-color: var(--bg-black);
+}

@@ -1,5 +1,5 @@
-import Logo from '@UI/Logo';
-import Navbar from '@components/Navbar';
+import Logo from '@components/Header/Logo';
+import Navbar from '@components/Header/Navbar';
 
 import './style.scss';
 

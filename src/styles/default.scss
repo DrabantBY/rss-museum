@@ -5,42 +5,57 @@
   user-select: none;
   color: #ffffff;
 
-  //? header var
-  --header-min-height: 12rem;
-
-  //? color var
+  //? color
   --bg-black: #030303;
   --bg-red: #710707;
   --gold: #9d8665;
   --gold-hover: #9d8665;
   --gold-active: #7e6c51;
 
-  //? logo var
-  --logo-fs: 2.8rem;
-  --logo-lh: 3.1rem;
+  //? header
+  --header-min-height: 12rem;
 
-  //? header link var
+  //? header link
   --header-link-fs: 2.2rem;
   --header-link-lh: 2.6rem;
   --link-ls: 0.2rem;
 
-  //? title var
+  //? logo
+  --logo-fs: 2.8rem;
+  --logo-lh: 3.1rem;
+
+  //? title
   --h2-fs: 8rem;
   --h2-lh: 9rem;
   --title-ls: 0.5rem;
 
-  //? slogan var
+  //? slogan
   --slogan-fs: 2.8rem;
   --slogan-lh: 3.3rem;
   --slogan-mb: 7.5rem;
 
-  //? discover-link var
+  //? discover-link
   --discover-link-width: 36rem;
   --discover-link-height: 7.5rem;
 
-  //? slider padding
-  --slider-pb: 6rem;
-  --slider-pl: 31%;
+  //? slider
+  --slider-welcome-width: 100rem;
+
+  //? slider controls
+  --controls-width: 60rem;
+  --controls-height: 12rem;
+  --controls-ml: auto;
+  --controls-mt: -6rem;
+  --controls-gap: 6rem;
+
+  //? slider counter
+  --counter-fs: 2.2rem;
+  --counter-lh: 4rem;
+  --counter-gap: 1rem;
+
+  //? slider pagination
+  --pagination-btn-size: 1.6rem;
+  --pagination-gap: 2.5rem;
 
   @media (max-width: $desktop) {
     --header-min-height: 10rem;
@@ -53,8 +68,13 @@
     --slogan-mb: 5rem;
     --discover-link-width: 30rem;
     --discover-link-height: 6rem;
-    --slider-pb: 12rem;
-    --slider-pl: 28%;
+    --slider-welcome-width: 70rem;
+    --controls-width: 100%;
+    --controls-ml: 0;
+    --controls-mt: 0;
+    --controls-gap: 4.5rem;
+    --counter-fs: 2rem;
+    --pagination-btn-size: 1.2rem;
 
     @media (max-width: $tablet) {
       --header-min-height: 8rem;
@@ -63,8 +83,8 @@
       --h2-lh: 6rem;
       --slogan-fs: 2rem;
       --slogan-lh: 2.3rem;
-      --slider-pb: 10rem;
-      --slider-pl: 0;
+      --slider-welcome-width: 100%;
+      --controls-height: 10rem;
 
       @media (max-width: $mobile) {
         --header-min-height: 6rem;
@@ -73,8 +93,12 @@
         --logo-fs: 1.6rem;
         --logo-lh: 1.8rem;
         --slogan-fs: 1.6rem;
-        --slogan-lh: 1.9rem;
-        --slider-pb: 8rem;
+        --controls-height: 8rem;
+        --controls-gap: 2.5rem;
+        --counter-fs: 1.6rem;
+        --counter-gap: 0.5rem;
+        --pagination-btn-size: 0.7rem;
+        --pagination-gap: 1rem;
       }
     }
   }

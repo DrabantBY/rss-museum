@@ -36,17 +36,8 @@
             "@styles/*": [
                 "src/styles/*"
             ],
-            "@Burger/*": [
-                "src/UI/BurgerOpen/*"
-            ],
             "@Pages/*": [
                 "src/Pages/*"
-            ],
-            "@Welcome/*": [
-                "src/Pages/Welcome/*"
-            ],
-            "@Greeting/*": [
-                "src/components/Greeting/*"
             ]
         }
     },

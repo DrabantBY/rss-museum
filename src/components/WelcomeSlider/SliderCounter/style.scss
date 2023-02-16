@@ -1,0 +1,9 @@
+.slider-counter {
+  display: flex;
+  align-items: center;
+  column-gap: var(--counter-gap);
+
+  font-size: var(--counter-fs);
+  line-height: var(--counter-lh);
+  text-transform: uppercase;
+}

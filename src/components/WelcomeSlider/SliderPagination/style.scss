@@ -1,0 +1,20 @@
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  column-gap: var(--pagination-gap);
+
+  &-btn {
+    width: var(--pagination-btn-size);
+    height: var(--pagination-btn-size);
+    background-color: #ffffff;
+
+    &.active {
+      background-color: var(--gold-active);
+    }
+
+    &:hover,
+    &.active:hover {
+      background-color: var(--gold-hover);
+    }
+  }
+}

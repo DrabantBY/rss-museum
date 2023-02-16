@@ -2,8 +2,12 @@
 
 .section-welcome {
   &__slider {
-    padding-block-end: var(--slider-pb);
-    padding-inline-start: var(--slider-pl);
+    max-width: var(--slider-welcome-width);
+    margin-inline-start: auto;
+
+    @media (max-width: $tablet) {
+      margin-inline-start: 0;
+    }
   }
 
   &__image {
@@ -26,7 +30,8 @@
     rgba(0, 0, 0, 0.5) 16.19%,
     rgba(0, 0, 0, 0) 30.73%
   );
-  pointer-events: none; //remember
+  pointer-events: none; //
+
   @media (max-width: $tablet) {
     display: none;
   }
