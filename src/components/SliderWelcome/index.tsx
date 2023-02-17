@@ -1,11 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import SliderControls from '@components/WelcomeSlider/SliderControls';
+import { Autoplay } from 'swiper';
+import useSliderWelcomeState from '@/zustand/state';
+import SliderControls from '@components/SliderWelcome/SliderControls';
 import 'swiper/scss';
-
 import './style.scss';
 
-const WelcomeSlider = (): JSX.Element => {
+const SliderWelcome = (): JSX.Element => {
+  const setCurrentSlideNumber = useSliderWelcomeState(
+    (state) => state.setCurrentSlideNumber
+  );
   return (
     <div className="slider section-welcome__slider">
       <Swiper
@@ -13,8 +16,13 @@ const WelcomeSlider = (): JSX.Element => {
         slidesPerView={1}
         loop={true}
         onSlideChange={(swiper) => {
-          console.log(swiper.realIndex, swiper.slides.length);
-        }}>
+          setCurrentSlideNumber(swiper.realIndex);
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}>
         <SwiperSlide>
           <img
             className="image section-welcome__image"
@@ -56,4 +64,4 @@ const WelcomeSlider = (): JSX.Element => {
   );
 };
 
-export default WelcomeSlider;
+export default SliderWelcome;
