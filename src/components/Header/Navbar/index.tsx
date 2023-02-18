@@ -1,19 +1,11 @@
 import { useState } from 'react';
 import NavbarLink from '@components/Header/NavbarLink';
 import BtnBurger from '@components/Header/BtnBurger';
+import { LIST } from '@/constants';
 
 import './style.scss';
 
 const Navbar = (): JSX.Element => {
-  const LIST = [
-    'visiting',
-    'explore',
-    'video',
-    'gallery',
-    'tickets',
-    'contacts',
-  ];
-
   const [isOpen, setIsOpen] = useState(true);
 
   return (

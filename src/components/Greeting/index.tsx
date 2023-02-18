@@ -14,7 +14,7 @@ const Greeting = (): JSX.Element => {
 
       <Link
         className="link-discover greeting__link-discover section-welcome__link-discover"
-        to="/">
+        to={`/tours/DiscoverTheLouvre`}>
         Discover the Louvre
       </Link>
     </div>

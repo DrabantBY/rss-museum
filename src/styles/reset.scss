@@ -49,6 +49,11 @@ button {
   flex-direction: column;
 }
 
+main {
+  position: relative;
+  flex: 1 0 auto;
+}
+
 .container {
   max-width: 1480px;
   padding-block: 0;
