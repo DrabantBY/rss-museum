@@ -1,20 +1,19 @@
+import useNavbarState from '@/hooks/useNavbarState';
 import './style.scss';
 
-const BtnBurger: React.FC<{
-  state: boolean;
-  handleState: React.Dispatch<React.SetStateAction<boolean>>;
-}> = ({ state, handleState }): JSX.Element => {
+const BtnBurger = (): JSX.Element => {
+  const { isOpen, setIsOpen } = useNavbarState();
   return (
     <button
       type="button"
       className={`burger burger-${
-        state ? 'open' : 'close'
+        isOpen ? 'open' : 'close'
       } navbar__burger header__burger`}
       onClick={() => {
-        handleState(!state);
+        setIsOpen();
       }}>
       <span />
-      {state && <span />}
+      {isOpen && <span />}
       <span />
     </button>
   );

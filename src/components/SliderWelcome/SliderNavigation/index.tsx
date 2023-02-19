@@ -1,8 +1,6 @@
 import { useSwiper } from 'swiper/react';
-
 import { ReactComponent as IconArrowLeft } from '@assets/svg/arrow-left.svg';
 import { ReactComponent as IconArrowRight } from '@assets/svg/arrow-right.svg';
-
 import './style.scss';
 
 const SliderNavigation = (): JSX.Element => {

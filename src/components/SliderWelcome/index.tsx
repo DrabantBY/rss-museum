@@ -1,13 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import useSliderWelcomeState from '@/zustand/state';
+import useSlideNumber from '@/hooks/useSlideNumber';
 import SliderControls from '@components/SliderWelcome/SliderControls';
 import 'swiper/scss';
 import './style.scss';
 
 const SliderWelcome = (): JSX.Element => {
-  const setCurrentSlideNumber = useSliderWelcomeState(
-    (state) => state.setCurrentSlideNumber
-  );
+  const setSlideNumber = useSlideNumber((state) => state.setSlideNumber);
   return (
     <div className="slider section-welcome__slider">
       <Swiper
@@ -15,7 +13,7 @@ const SliderWelcome = (): JSX.Element => {
         slidesPerView={1}
         loop={true}
         onSlideChange={(swiper) => {
-          setCurrentSlideNumber(swiper.realIndex);
+          setSlideNumber(swiper.realIndex);
         }}>
         <SwiperSlide>
           <img

@@ -1,19 +1,17 @@
 import { useSwiper } from 'swiper/react';
-import useSliderWelcomeState from '@/zustand/state';
+import useSlideNumber from '@/hooks/useSlideNumber';
 import './style.scss';
 
 const SliderPagination = (): JSX.Element => {
   const swiper = useSwiper();
-  const currentSlideNumber = useSliderWelcomeState(
-    (state) => state.currentSlideNumber
-  );
+  const slideNumber = useSlideNumber((state) => state.slideNumber);
 
   return (
     <div className="slider-pagination section-welcome__slider-pagination">
       {Array.from({ length: swiper.slides.length }).map((_, index) => (
         <button
           className={`slider-pagination-btn section-welcome__slider-pagination-btn ${
-            index === currentSlideNumber ? 'active' : ''
+            index === slideNumber ? 'active' : ''
           }`}
           type="button"
           key={index}

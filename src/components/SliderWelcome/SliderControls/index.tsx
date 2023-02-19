@@ -1,7 +1,6 @@
 import SliderCounter from '../SliderCounter';
 import SliderPagination from '../SliderPagination';
 import SliderNavigation from '../SliderNavigation';
-
 import './style.scss';
 
 const SliderControls = (): JSX.Element => {

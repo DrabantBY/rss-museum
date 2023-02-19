@@ -47,6 +47,9 @@
             ],
             "@zustand/*": [
                 "src/zustand/*"
+            ],
+            "@hooks/*": [
+                "src/hooks/*"
             ]
         }
     },
