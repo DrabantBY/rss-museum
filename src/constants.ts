@@ -22,3 +22,12 @@ export const MARKERS = [
   [2.333, 48.8619],
   [2.3365, 48.8625],
 ];
+
+export const TITLES = [
+  'royal palace',
+  'denon wing',
+  'colonnade perrault',
+  'greek hall',
+  'mona lisa',
+  'night palace',
+];

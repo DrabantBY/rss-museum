@@ -42,6 +42,9 @@
             "@utils/*": [
                 "src/utils/*"
             ],
+            "@Visiting/*": [
+                "src/Pages/Visiting/*"
+            ],
             "@zustand/*": [
                 "src/zustand/*"
             ]

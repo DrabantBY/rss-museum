@@ -1,7 +1,10 @@
 @import '@styles/variables';
 
 .header {
+  position: sticky;
+  top: 0;
   background-color: var(--bg-black);
+  z-index: 3;
 
   &__container {
     position: relative;

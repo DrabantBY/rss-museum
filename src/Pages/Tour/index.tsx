@@ -4,13 +4,11 @@ import { TOURS } from '@/types';
 import './style.scss';
 
 const Tour = (): JSX.Element => {
-  const { name } = useParams<{ name: keyof typeof TOURS }>();
-  const src = name === undefined ? '' : TOURS[name];
+  const { name } = useParams() as { name: keyof typeof TOURS };
 
   return (
     <iframe
-      src={src}
-      // style="border:0;"
+      src={TOURS[name]}
       allowFullScreen
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"></iframe>

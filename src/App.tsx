@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from '@Pages/Main';
 import Welcome from '@Pages/Welcome';
 import Tour from '@Pages/Tour';
+import Visiting from '@Pages/Visiting';
 
 const router = createBrowserRouter([
   {
@@ -12,11 +13,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Welcome />,
       },
-      //   {
-      //     path: 'visiting',
-      //     element: <Visiting />,
-      //   },
-
+      {
+        path: 'visiting',
+        element: <Visiting />,
+      },
       {
         path: 'tours/:name',
         element: <Tour />,

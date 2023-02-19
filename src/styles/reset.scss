@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+section {
+  padding-block: var(--section-py);
+}
+
 h2 {
   font-family: 'Forum';
   font-weight: 400;
@@ -47,11 +51,12 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-black);
 }
 
 main {
   position: relative;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 
 .container {

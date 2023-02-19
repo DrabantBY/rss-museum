@@ -1,6 +1,6 @@
 import { useSwiper } from 'swiper/react';
 import useSliderWelcomeState from '@/zustand/state';
-import handleNumbers from '@/utils/handleNumbers';
+import handleSlideNumbers from '@/utils/handleSlideNumber';
 import './style.scss';
 
 const SliderCounter = (): JSX.Element => {
@@ -10,9 +10,9 @@ const SliderCounter = (): JSX.Element => {
   );
   return (
     <div className="slider-counter section-welcome__slider-counter">
-      <span>{handleNumbers(currentSlideNumber + 1)}</span>
+      <span>{handleSlideNumbers(currentSlideNumber + 1)}</span>
       <span>|</span>
-      <span>{handleNumbers(swiper.slides.length)}</span>
+      <span>{handleSlideNumbers(swiper.slides.length)}</span>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
 import useSliderWelcomeState from '@/zustand/state';
 import SliderControls from '@components/SliderWelcome/SliderControls';
 import 'swiper/scss';
@@ -17,12 +16,7 @@ const SliderWelcome = (): JSX.Element => {
         loop={true}
         onSlideChange={(swiper) => {
           setCurrentSlideNumber(swiper.realIndex);
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}>
+        }}>
         <SwiperSlide>
           <img
             className="image section-welcome__image"

@@ -1,0 +1,78 @@
+@import '@styles/variables';
+
+.section-visiting__cards {
+  &-item {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $desktop) {
+      &:nth-child(odd) {
+        justify-self: right;
+
+        @media (max-width: $mobile) {
+          justify-self: center;
+        }
+      }
+
+      &:nth-child(even) {
+        justify-self: left;
+
+        @media (max-width: $mobile) {
+          justify-self: center;
+        }
+      }
+    }
+  }
+
+  &-link {
+    display: block;
+    position: relative;
+    margin-block-end: 2rem;
+
+    img {
+      display: block;
+      width: 100%;
+      margin-block-end: 2.5rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      width: 15rem;
+      height: 0.2rem;
+      background-color: var(--bg-red);
+      transition: width 0.4s linear;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+    &:hover {
+      color: var(--gold-hover);
+    }
+  }
+
+  &-title {
+    font-family: 'Forum';
+    font-size: var(--card-title-fs);
+    line-height: var(--card-title-lh);
+    letter-spacing: var(--card-title-ls);
+    text-transform: uppercase;
+  }
+
+  &-description {
+    font-weight: 100;
+    font-size: var(--card-description-fs);
+    line-height: var(--card-description-lh);
+    text-transform: capitalize;
+
+    span {
+      display: block;
+      margin-block-start: 1rem;
+      font-size: var(--card-span-fs);
+      line-height: var(--card-span-lh);
+    }
+  }
+}
