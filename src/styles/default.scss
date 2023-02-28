@@ -73,6 +73,10 @@
   --card-span-fs: 1.8rem;
   --card-span-lh: 2.1rem;
 
+  //? slider-thumb
+  --thumb-ring-radius: 3.9rem;
+  --thumb-width: 0.5rem;
+
   @media (max-width: $desktop) {
     --header-min-height: 10rem;
     --header-link-fs: 2rem;
@@ -135,6 +139,8 @@
         --card-title-ls: 0.5rem;
         --card-description-fs: 1.6rem;
         --card-description-lh: 1.9rem;
+        --thumb-ring-radius: 2rem;
+        --thumb-width: 0.2rem;
       }
     }
   }

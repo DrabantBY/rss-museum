@@ -20,7 +20,7 @@
     background-color: var(--gold-hover);
   }
 
-  &-open {
+  &-close {
     gap: 0.6rem;
 
     span {
@@ -29,7 +29,7 @@
     }
   }
 
-  &-close {
+  &-open {
     span {
       width: 33px;
       height: 2px;

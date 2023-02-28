@@ -1,0 +1,70 @@
+.slider-comparison {
+  position: relative;
+  overflow: hidden;
+  max-width: 72rem;
+  max-height: 70rem;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &__figure-before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: calc(50% - var(--thumb-width) / 2);
+    width: var(--thumb-width);
+    height: 100%;
+
+    z-index: 2;
+    cursor: col-resize;
+
+    &-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: var(--thumb-ring-radius);
+      height: var(--thumb-ring-radius);
+      border: var(--thumb-width) solid white;
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: var(--thumb-width);
+      left: 0;
+      height: calc(50% - (var(--thumb-ring-radius) - 0.1rem) / 2);
+      background-color: white;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+}

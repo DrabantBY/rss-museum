@@ -1,38 +1,36 @@
 @import '@styles/variables';
 
-.section-welcome {
-  &__slider {
-    max-width: var(--slider-welcome-width);
-    margin-inline-start: auto;
+.slider-welcome {
+  max-width: var(--slider-welcome-width);
+  margin-inline-start: auto;
+
+  @media (max-width: $tablet) {
+    margin-inline-start: 0;
+  }
+
+  &__body::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.5) 16.19%,
+      rgba(0, 0, 0, 0) 30.73%
+    );
+    pointer-events: none;
 
     @media (max-width: $tablet) {
-      margin-inline-start: 0;
+      display: none;
     }
   }
 
   &__image {
     display: block;
     width: 100%;
-  }
-}
-
-.swiper::after {
-  position: absolute;
-  z-index: 1;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    90deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.5) 16.19%,
-    rgba(0, 0, 0, 0) 30.73%
-  );
-  pointer-events: none;
-
-  @media (max-width: $tablet) {
-    display: none;
   }
 }

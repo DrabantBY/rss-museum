@@ -13,7 +13,7 @@ const BtnBurger = (): JSX.Element => {
         setIsOpen();
       }}>
       <span />
-      {isOpen && <span />}
+      {!isOpen && <span />}
       <span />
     </button>
   );

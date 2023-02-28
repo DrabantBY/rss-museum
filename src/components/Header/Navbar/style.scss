@@ -27,7 +27,7 @@
       background-color: var(--bg-black);
       transition: transform 0.2s linear;
 
-      &:has(+ .burger-close) {
+      &:has(+ .burger-open) {
         transform: translateY(100%);
       }
     }

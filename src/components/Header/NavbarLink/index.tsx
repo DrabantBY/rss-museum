@@ -12,7 +12,7 @@ const NavbarLink: React.FC<{ link: string }> = ({ link }): JSX.Element => {
         className="menu-link navbar__menu-link header__menu-link"
         to={`/${link}`}
         onClick={() => {
-          !isOpen && setIsOpen();
+          isOpen && setIsOpen();
         }}>
         {link}
         <IconArrowLink />

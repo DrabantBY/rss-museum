@@ -3,6 +3,7 @@ import Main from '@Pages/Main';
 import Welcome from '@Pages/Welcome';
 import Tour from '@Pages/Tour';
 import Visiting from '@Pages/Visiting';
+import Explore from '@Pages/Explore';
 
 const router = createBrowserRouter([
   {
@@ -14,12 +15,16 @@ const router = createBrowserRouter([
         element: <Welcome />,
       },
       {
-        path: 'visiting',
+        path: '/tours/:name',
+        element: <Tour />,
+      },
+      {
+        path: '/visiting',
         element: <Visiting />,
       },
       {
-        path: 'tours/:name',
-        element: <Tour />,
+        path: '/explore',
+        element: <Explore />,
       },
     ],
   },
