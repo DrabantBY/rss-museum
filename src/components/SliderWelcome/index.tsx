@@ -7,7 +7,6 @@ import './style.scss';
 
 const SliderWelcome = (): JSX.Element => {
   const setCounter = useSlideCounter((state) => state.setCounter);
-  console.log('render swiper');
 
   const pagination = {
     el: '.slider-welcome__pagination',
@@ -74,6 +73,7 @@ const SliderWelcome = (): JSX.Element => {
           />
         </SwiperSlide>
       </Swiper>
+
       <SliderControls />
     </div>
   );

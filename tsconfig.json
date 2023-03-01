@@ -50,6 +50,12 @@
             ],
             "@hooks/*": [
                 "src/hooks/*"
+            ],
+            "@SliderExplore/*": [
+                "src/components/SliderExplore/*"
+            ],
+            "@ExploreBody/*": [
+                "src/components/ExploreBody/*"
             ]
         }
     },

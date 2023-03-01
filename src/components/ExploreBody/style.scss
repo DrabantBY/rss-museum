@@ -1,0 +1,50 @@
+@import '@styles/variables';
+
+.section-explore {
+  &__body {
+    flex-basis: 66rem;
+
+    @media (max-width: $desktop) {
+      margin-block-end: 6rem;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-block-end: var(--section-title-mb);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2.5rem;
+      width: 100%;
+      height: 0.3rem;
+      background-color: var(--bg-red);
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+    margin-block-end: 2.5rem;
+
+    span {
+      color: var(--gold-select);
+    }
+
+    @media (max-width: $desktop) {
+      font-size: 2rem;
+      margin-block-end: 0;
+
+      &:last-child {
+        display: none;
+      }
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+}
