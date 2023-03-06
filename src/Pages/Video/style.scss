@@ -1,0 +1,30 @@
+@import '@styles/variables';
+
+.section-video {
+  background-color: white;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    color: var(--gold);
+    margin-block-end: var(--title-mb);
+  }
+
+  &__text {
+    flex-basis: 65rem;
+    font-family: initial;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+    letter-spacing: normal;
+    text-transform: none;
+    color: black;
+
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import Welcome from '@Pages/Welcome';
 import Tour from '@Pages/Tour';
 import Visiting from '@Pages/Visiting';
 import Explore from '@Pages/Explore';
+import Video from '@Pages/Video';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/explore',
         element: <Explore />,
+      },
+      {
+        path: '/video',
+        element: <Video />,
       },
     ],
   },

@@ -44,6 +44,51 @@ button {
   background-color: transparent;
   border: none;
   transition: all 0.2s linear;
+
+  &:has(svg) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+input[type='range'] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-red) 0%,
+    var(--bg-red) var(--value),
+    var(--bg-gray) var(--value),
+    var(--bg-gray) 100%
+  );
+
+  &::-webkit-slider-runnable-track {
+    height: var(--track-height);
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: var(--thumb-size);
+    width: var(--thumb-size);
+    margin-block-start: var(--thumb-mt);
+    border-radius: 100%;
+    background-color: #ffffff;
+    cursor: ew-resize;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 #root {

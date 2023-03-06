@@ -1,0 +1,64 @@
+@import '@styles/variables';
+
+.player {
+  &-body {
+    width: 100%;
+  }
+
+  &-screen {
+    width: 100%;
+    height: var(--video-screen-height);
+    object-fit: cover;
+  }
+
+  &-controls {
+    position: relative;
+    min-height: var(--video-controls-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: var(--video-controls-gap);
+    padding-inline: var(--video-controls-px);
+    margin-block-start: -0.3rem;
+    background-color: var(--bg-black);
+
+    button:hover svg path {
+      fill: var(--bg-red);
+    }
+
+    &__progress {
+      flex: 0 1 92rem;
+
+      @media (max-width: $tablet) {
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        width: 100%;
+      }
+    }
+
+    &__volume {
+      flex: 0 1 14rem;
+
+      @media (max-width: $tablet) {
+        flex: 1 0 auto;
+      }
+    }
+
+    @media (max-width: $desktop) {
+      &__btn-fullscreen svg {
+        height: 2.6rem;
+      }
+
+      &__btn-sound svg {
+        height: 2rem;
+      }
+
+      @media (max-width: $mobile) {
+        svg {
+          height: 1.8rem;
+        }
+      }
+    }
+  }
+}

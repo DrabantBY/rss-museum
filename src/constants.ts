@@ -8,11 +8,11 @@ export const LIST = [
 ];
 
 export const VIDEO = [
-  'https://youtu.be/zp1BXPX8jcU',
-  'https://youtu.be/Vi5D6FKhRmo',
-  'https://youtu.be/NOhDysLnTvY',
-  'https://youtu.be/aWmJ5DgyWPI',
-  'https://youtu.be/2OR0OCr6uRE',
+  'https://www.youtube.com/embed/zp1BXPX8jcU',
+  'https://www.youtube.com/embed/Vi5D6FKhRmo',
+  'https://www.youtube.com/embed/NOhDysLnTvY',
+  'https://www.youtube.com/embed/aWmJ5DgyWPI',
+  'https://www.youtube.com/embed/2OR0OCr6uRE',
 ];
 
 export const MARKERS = [

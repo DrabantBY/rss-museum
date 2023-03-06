@@ -9,10 +9,13 @@
   --bg-black: #030303;
   --bg-red: #710707;
   --bg-white: #dbdbdb;
+  --bg-gray: #c4c4c4;
   --gold: #9d8665;
   --gold-hover: #9d8665;
   --gold-active: #7e6c51;
   --gold-select: #caaa7d;
+  --gray: #999999;
+  --gray-active: #333333;
 
   //? header
   --header-min-height: 12rem;
@@ -30,6 +33,7 @@
   --h2-fs: 8rem;
   --h2-lh: 9rem;
   --title-ls: 0.5rem;
+  --title-mb: 7.5rem;
 
   //? slogan
   --slogan-fs: 2.8rem;
@@ -78,6 +82,16 @@
   --thumb-ring-radius: 3.9rem;
   --thumb-width: 0.5rem;
 
+  //? video
+  --video-item-height: 25rem;
+  --video-screen-height: 65rem;
+  --video-controls-gap: 5rem;
+  --video-controls-height: 8.5rem;
+  --video-controls-px: 4rem;
+  --thumb-size: 1.5rem;
+  --thumb-mt: -0.3rem;
+  --track-height: 0.8rem;
+
   @media (max-width: $desktop) {
     --header-min-height: 10rem;
     --header-link-fs: 2rem;
@@ -104,6 +118,14 @@
     --card-description-lh: 2.3rem;
     --card-span-fs: 1.6rem;
     --card-span-lh: 1.9rem;
+    --title-mb: 4rem;
+    --video-screen-height: 44rem;
+    --video-item-height: 17rem;
+    --video-controls-gap: 3rem;
+    --thumb-size: 1.3rem;
+    --track-height: 0.5rem;
+    --thumb-mt: -0.4rem;
+    --video-controls-height: 6rem;
 
     @media (max-width: $tablet) {
       --header-min-height: 8rem;
@@ -121,6 +143,12 @@
       --card-title-lh: 2.4rem;
       --card-description-fs: 1.8rem;
       --card-description-lh: 2.1rem;
+      --title-mb: 2rem;
+      --video-screen-height: 33rem;
+      --video-item-height: 20rem;
+      --video-controls-gap: 3.5rem;
+      --video-controls-height: 5.5rem;
+      --video-controls-px: 3rem;
 
       @media (max-width: $mobile) {
         --header-min-height: 6rem;
@@ -142,6 +170,14 @@
         --card-description-lh: 1.9rem;
         --thumb-ring-radius: 2rem;
         --thumb-width: 0.2rem;
+        --video-screen-height: 17rem;
+        --video-item-height: 10rem;
+        --video-controls-gap: 3rem;
+        --thumb-size: 1rem;
+        --track-height: 0.4rem;
+        --thumb-mt: -0.3rem;
+        --video-controls-height: 5rem;
+        --video-controls-px: 2rem;
       }
     }
   }

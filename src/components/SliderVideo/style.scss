@@ -1,0 +1,64 @@
+@import '@styles/variables';
+
+.slider-video {
+  &__player {
+    margin-block-end: 2rem;
+  }
+
+  &__list {
+    margin-block-end: 2rem;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: var(--video-item-height);
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    .swiper-pagination-bullet {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 100%;
+      background-color: var(--gray);
+
+      @media (max-width: $mobile) {
+        width: 0.8rem;
+        height: 0.8rem;
+      }
+
+      &-active {
+        background-color: var(--gray-active);
+      }
+
+      &:hover {
+        background-color: var(--bg-red);
+      }
+    }
+  }
+
+  &__btn-next,
+  &__btn-prev {
+    &:hover svg path {
+      fill: var(--bg-red);
+    }
+
+    @media (max-width: $mobile) {
+      svg {
+        width: 0.7rem;
+        height: 0.8rem;
+      }
+    }
+  }
+}

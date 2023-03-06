@@ -25,12 +25,12 @@ const SliderWelcome = (): JSX.Element => {
     <div className="slider-welcome">
       <Swiper
         className="slider-welcome__body"
-        modules={[Navigation, Pagination]}
-        spaceBetween={0}
-        slidesPerView={1}
         loop={true}
+        slidesPerView={1}
+        spaceBetween={10}
         navigation={navigation}
         pagination={pagination}
+        modules={[Navigation, Pagination]}
         onSlideChange={(swiper) => {
           setCounter(swiper.realIndex + 1, swiper.slides.length);
         }}

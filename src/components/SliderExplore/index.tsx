@@ -43,6 +43,7 @@ const SliderExplore = (): JSX.Element => {
       document.body.onmouseup = null;
     };
   }, [handleMouseMove, setCanMove]);
+
   return (
     <div className="slider-explore section-explore__slider-explore">
       <div

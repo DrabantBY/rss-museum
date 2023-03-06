@@ -51,9 +51,6 @@
 
   &__btn-prev,
   &__btn-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-block: 1rem;
 
     &:hover svg path {

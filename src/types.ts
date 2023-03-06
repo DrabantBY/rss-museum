@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react';
+
 export enum TOURS {
   DiscoverTheLouvre = 'https://www.google.com/maps/embed?pb=!4v1676722357333!6m8!1m7!1sCAoSLEFGMVFpcE9WeFpRdVN5M0J4OVRfSHBIXzdGdEJIRFRYdkk2U0YtQTEwb2NU!2m2!1d48.86181593314584!2d2.336681797486702!3f81.55!4f-16.599999999999994!5f0.7820865974627469',
   RoyalPalace = 'https://www.google.com/maps/embed?pb=!4v1676725243243!6m8!1m7!1sCAoSLEFGMVFpcE1aOVlnbkFyYndFSWJUREFOZVNRWUZ1OWdOcXBXXzJTdjhGQnZZ!2m2!1d48.8606881835717!2d2.335679134426641!3f328.36!4f-2.450000000000003!5f0.4000000000000002',
@@ -14,4 +16,8 @@ export enum CONTACTS {
   Facebook = 'https://www.facebook.com/museedulouvre',
   Twitter = 'http://twitter.com/museelouvre',
   Pinterest = 'https://www.pinterest.fr/museedulouvre/',
+}
+
+export interface VarCSS extends CSSProperties {
+  '--value': string;
 }

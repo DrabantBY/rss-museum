@@ -56,6 +56,12 @@
             ],
             "@ExploreBody/*": [
                 "src/components/ExploreBody/*"
+            ],
+            "@Video/*": [
+                "src/Pages/Video/*"
+            ],
+            "@VieoPlayer/*": [
+                "src/components/VieoPlayer/*"
             ]
         }
     },
