@@ -2,17 +2,30 @@
 
 .player {
   &-body {
+    position: relative;
     width: 100%;
+    height: var(--video-screen-height);
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover .player-controls {
+      transform: none;
+    }
   }
 
   &-screen {
     width: 100%;
-    height: var(--video-screen-height);
+    height: 100%;
+    object-position: bottom center;
     object-fit: cover;
   }
 
   &-controls {
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
     min-height: var(--video-controls-height);
     display: flex;
     align-items: center;
@@ -21,42 +34,18 @@
     padding-inline: var(--video-controls-px);
     margin-block-start: -0.3rem;
     background-color: var(--bg-black);
+    transition: transform 0.3s linear;
 
     button:hover svg path {
       fill: var(--bg-red);
     }
 
-    &__progress {
-      flex: 0 1 92rem;
-
-      @media (max-width: $tablet) {
-        position: absolute;
-        top: 0;
-        transform: translateY(-100%);
-        width: 100%;
-      }
-    }
-
-    &__volume {
-      flex: 0 1 14rem;
-
-      @media (max-width: $tablet) {
-        flex: 1 0 auto;
-      }
-    }
-
     @media (max-width: $desktop) {
-      &__btn-fullscreen svg {
+      svg {
         height: 2.6rem;
-      }
 
-      &__btn-sound svg {
-        height: 2rem;
-      }
-
-      @media (max-width: $mobile) {
-        svg {
-          height: 1.8rem;
+        @media (max-width: $mobile) {
+          height: 2rem;
         }
       }
     }

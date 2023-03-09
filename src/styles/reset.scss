@@ -69,6 +69,7 @@ input[type='range'] {
     var(--bg-gray) var(--value),
     var(--bg-gray) 100%
   );
+  transition: all 0.1s linear;
 
   &::-webkit-slider-runnable-track {
     height: var(--track-height);

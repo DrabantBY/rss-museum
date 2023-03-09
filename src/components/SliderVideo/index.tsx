@@ -39,7 +39,7 @@ const SliderVideo = (): JSX.Element => {
         ))}
       </Swiper>
 
-      <Swiper
+      {/* <Swiper
         className="slider-video__list"
         loop={true}
         slidesPerView={2}
@@ -60,7 +60,8 @@ const SliderVideo = (): JSX.Element => {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
+
       <div className="slider-video__controls">
         <button className="btn-prev slider-video__btn-prev" type="button">
           <DoubleArrowPrevIcon />

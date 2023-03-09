@@ -1,0 +1,12 @@
+@import '@styles/variables';
+
+.progress {
+  flex: 0 1 92rem;
+
+  @media (max-width: $tablet) {
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+@import '@styles/variables';
+
+.volume {
+  flex: 0 1 14rem;
+
+  @media (max-width: $tablet) {
+    flex: 1 0 auto;
+  }
+}
