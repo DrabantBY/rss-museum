@@ -42,26 +42,11 @@
             "@utils/*": [
                 "src/utils/*"
             ],
-            "@Visiting/*": [
-                "src/Pages/Visiting/*"
-            ],
-            "@zustand/*": [
-                "src/zustand/*"
-            ],
             "@hooks/*": [
                 "src/hooks/*"
             ],
-            "@SliderExplore/*": [
-                "src/components/SliderExplore/*"
-            ],
-            "@ExploreBody/*": [
-                "src/components/ExploreBody/*"
-            ],
-            "@Video/*": [
-                "src/Pages/Video/*"
-            ],
-            "@VieoPlayer/*": [
-                "src/components/VieoPlayer/*"
+            "@PlayerBtn/*": [
+                "src/UI/PlayerBtn/*"
             ]
         }
     },

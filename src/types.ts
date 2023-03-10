@@ -21,3 +21,9 @@ export enum CONTACTS {
 export interface VarCSS extends CSSProperties {
   '--value': string;
 }
+
+export interface BtnProps {
+  className: string;
+  flag: boolean;
+  handleClick: () => void;
+}

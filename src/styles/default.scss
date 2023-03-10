@@ -88,6 +88,7 @@
   --video-screen-height: 73.5rem;
   --video-controls-gap: 5rem;
   --video-controls-height: 8.5rem;
+  --video-controls-svg-height: auto;
   --video-controls-px: 4rem;
   --thumb-size: 1.5rem;
   --thumb-mt: -0.3rem;
@@ -130,6 +131,7 @@
     --track-height: 0.5rem;
     --thumb-mt: -0.4rem;
     --video-controls-height: 6rem;
+    --video-controls-svg-height: 2.6rem;
     --btn-poster-size: 15.2rem;
 
     @media (max-width: $tablet) {
@@ -183,6 +185,7 @@
         --track-height: 0.4rem;
         --thumb-mt: -0.3rem;
         --video-controls-height: 5rem;
+        --video-controls-svg-height: 2rem;
         --video-controls-px: 2rem;
         --btn-poster-size: 5rem;
       }
