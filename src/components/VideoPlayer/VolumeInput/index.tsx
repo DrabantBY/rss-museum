@@ -5,7 +5,6 @@ import './style.scss';
 const SoundInput: React.FC<{
   video: React.RefObject<HTMLVideoElement>;
 }> = ({ video }): JSX.Element => {
-  console.dir(video.current);
   const [value, setValue] = useState(0.1);
   const stateVar: VarCSS = { '--value': `${value * 100}%` };
 

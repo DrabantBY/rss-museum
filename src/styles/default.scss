@@ -15,6 +15,7 @@
   --gold-active: #7e6c51;
   --gold-select: #caaa7d;
   --gray: #999999;
+  --gray-hover: #989898;
   --gray-active: #333333;
 
   //? header
@@ -92,6 +93,9 @@
   --thumb-mt: -0.3rem;
   --track-height: 0.8rem;
 
+  //? btn-poster
+  --btn-poster-size: 22rem;
+
   @media (max-width: $desktop) {
     --header-min-height: 10rem;
     --header-link-fs: 2rem;
@@ -126,6 +130,7 @@
     --track-height: 0.5rem;
     --thumb-mt: -0.4rem;
     --video-controls-height: 6rem;
+    --btn-poster-size: 15.2rem;
 
     @media (max-width: $tablet) {
       --header-min-height: 8rem;
@@ -149,6 +154,7 @@
       --video-controls-gap: 3.5rem;
       --video-controls-height: 5.5rem;
       --video-controls-px: 3rem;
+      --btn-poster-size: 8rem;
 
       @media (max-width: $mobile) {
         --header-min-height: 6rem;
@@ -178,6 +184,7 @@
         --thumb-mt: -0.3rem;
         --video-controls-height: 5rem;
         --video-controls-px: 2rem;
+        --btn-poster-size: 5rem;
       }
     }
   }

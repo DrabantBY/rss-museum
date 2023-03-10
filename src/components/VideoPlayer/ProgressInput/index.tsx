@@ -8,8 +8,6 @@ const ProgressInput: React.FC<{
   const [value, setValue] = useState(video.current?.currentTime ?? 0);
   const stateVar: VarCSS = { '--value': `${value}%` };
 
-  console.dir(video.current);
-
   const handleTimeUpdate = (): void => {
     if (video.current === null) return;
     const { currentTime, duration } = video.current;

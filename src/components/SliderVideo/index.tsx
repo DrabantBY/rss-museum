@@ -1,4 +1,4 @@
-import VideoPlayer from '@components/VieoPlayer';
+import VideoPlayer from '@components/VideoPlayer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import { ReactComponent as DoubleArrowPrevIcon } from '@assets/svg/double-arrow-prev.svg';

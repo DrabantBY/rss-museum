@@ -4,12 +4,20 @@ import { ReactComponent as PauseIcon } from '@assets/svg/pause.svg';
 
 const PlayBtn: React.FC<{
   video: React.RefObject<HTMLVideoElement>;
-}> = ({ video }): JSX.Element => {
-  const [flag, setFlag] = useState(true);
+  paused: boolean;
+  setPaused: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ video, paused, setPaused }): JSX.Element => {
+  const [flag, setFlag] = useState(paused);
 
   const handleVideoEnd = (): void => {
+    setPaused(true);
     setFlag(true);
+    video.current?.classList.remove('play');
   };
+
+  useEffect(() => {
+    setFlag(paused);
+  }, [paused]);
 
   useEffect(() => {
     video.current?.addEventListener('ended', handleVideoEnd);
@@ -24,6 +32,7 @@ const PlayBtn: React.FC<{
     } else {
       video.current?.pause();
     }
+    video.current?.classList.toggle('play');
     setFlag(!flag);
   };
 

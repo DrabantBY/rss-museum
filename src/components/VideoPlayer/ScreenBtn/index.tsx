@@ -9,8 +9,13 @@ const ScreenBtn: React.FC<{
   const [flag, setFlag] = useState(true);
 
   const handleVideoScreen: React.MouseEventHandler<HTMLButtonElement> = () => {
-    // if (video.current === null) return;
-    // void video.current.;
+    if (video.current === null) return;
+    if (flag) {
+      void video.current.parentElement?.requestFullscreen();
+    } else {
+      void document.exitFullscreen();
+    }
+
     setFlag(!flag);
   };
 
