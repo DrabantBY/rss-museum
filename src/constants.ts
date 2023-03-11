@@ -31,3 +31,5 @@ export const TITLES = [
   'mona lisa',
   'night palace',
 ];
+
+export const INIT_VOLUME = 0.1;

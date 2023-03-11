@@ -19,10 +19,6 @@ const VideoPlayer: React.FC<{ index: number }> = ({ index }): JSX.Element => {
 
   const handleVideoEnd = (): void => {
     setPause(true);
-    setMute(true);
-    if (videoRef.current !== null) {
-      videoRef.current.muted = false;
-    }
   };
 
   useEffect(() => {
@@ -115,7 +111,7 @@ const VideoPlayer: React.FC<{ index: number }> = ({ index }): JSX.Element => {
           <MuteIcon />
         </PlayerBtn>
 
-        <VolumeInput video={videoRef} />
+        <VolumeInput video={videoRef} mute={mute} setMute={setMute} />
 
         <PlayerBtn {...btnScreenProps}>
           <EnterIcon />

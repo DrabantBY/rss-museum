@@ -14,10 +14,6 @@ const ProgressInput: React.FC<{
     setValue(Math.round((currentTime / duration) * 100));
   };
 
-  const handleVideoEnd = (): void => {
-    setValue(0);
-  };
-
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     if (video.current === null) return;
     const value = Number(e.target.value);
@@ -27,10 +23,8 @@ const ProgressInput: React.FC<{
 
   useEffect(() => {
     video.current?.addEventListener('timeupdate', handleTimeUpdate);
-    video.current?.addEventListener('ended', handleVideoEnd);
     return () => {
       video.current?.removeEventListener('timeupdate', handleTimeUpdate);
-      video.current?.removeEventListener('ended', handleVideoEnd);
     };
   }, []);
 
